@@ -53,7 +53,7 @@ module.exports = function (config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
+      name: 'Bluesky Dev',
       slug: 'bluesky',
       scheme: 'bluesky',
       owner: 'blueskysocial',
@@ -68,7 +68,7 @@ module.exports = function (config) {
       primaryColor: '#1083fe',
       ios: {
         supportsTablet: false,
-        bundleIdentifier: 'xyz.blueskyweb.app',
+        bundleIdentifier: 'xyz.blueskyweb.app.dev',
         config: {
           usesNonExemptEncryption: false,
         },
@@ -133,7 +133,7 @@ module.exports = function (config) {
           backgroundColor: '#1185FE',
         },
         googleServicesFile: './google-services.json',
-        package: 'xyz.blueskyweb.app',
+        package: 'xyz.blueskyweb.app.dev',
         intentFilters: [
           {
             action: 'VIEW',
@@ -217,8 +217,9 @@ module.exports = function (config) {
               ios: {
                 appExtensions: [
                   {
-                    targetName: 'Share-with-Bluesky',
-                    bundleIdentifier: 'xyz.blueskyweb.app.Share-with-Bluesky',
+                    targetName: 'Share-with-Bluesky-Dev',
+                    bundleIdentifier:
+                      'xyz.blueskyweb.app.dev.Share-with-Bluesky-Dev',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -226,8 +227,8 @@ module.exports = function (config) {
                     },
                   },
                   {
-                    targetName: 'BlueskyNSE',
-                    bundleIdentifier: 'xyz.blueskyweb.app.BlueskyNSE',
+                    targetName: ' BlueskyNSE',
+                    bundleIdentifier: 'xyz.blueskyweb.app.dev.BlueskyNSE',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
